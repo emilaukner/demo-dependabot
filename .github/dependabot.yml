@@ -9,25 +9,11 @@ updates:
     directory: "/opentofu"
     schedule:
       interval: "weekly"
-      day: "tuesday"
-      time: "11:00"
-    # Allow both direct and indirect dependency updates
     open-pull-requests-limit: 10
-    # Reviewers for dependency update PRs
-    reviewers:
-      - "dependabot"
     # Labels to apply to PRs
     labels:
       - "dependencies"
       - "terraform"
-    # Commit message prefix
-    commit-message:
-      prefix: "terraform"
-      include: "scope"
-    # Ignore specific dependencies if needed
-    # ignore:
-    #   - dependency-name: "hashicorp/aws"
-    #     versions: ["4.x"]
     
   # Enable version updates for npm (from earlier example)
   - package-ecosystem: "npm"
