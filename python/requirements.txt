@@ -32,7 +32,7 @@ PyMySQL==0.9.3
 # Testing - old versions
 pytest==5.4.0
 pytest-cov==2.8.0
-coverage==5.0
+coverage==7.13.4
 
 # CLI Tools
 Click==7.0
