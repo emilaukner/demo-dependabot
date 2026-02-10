@@ -5,15 +5,15 @@ updates:
     schedule:
       interval: "weekly"
   # Enable version updates for Terraform/OpenTofu
-  - package-ecosystem: "opentofu"
-    directory: "/opentofu"
+  - package-ecosystem: "terraform"
+    directory: "/" # Specify the directory where your .tf files are located
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
-    # Labels to apply to PRs
+      interval: "daily" # How often to check for updates
+    # Optional: Add labels to Dependabot PRs for better organization
     labels:
       - "dependencies"
-      - "opentofu"
+      - "terraform"
+      - "dependabot"
     
   # Enable version updates for npm (from earlier example)
   - package-ecosystem: "npm"
