@@ -67,3 +67,11 @@ updates:
     labels:
       - "dependencies"
       - "github-actions"
+  # Enable version updates for Go
+  - package-ecosystem: "go"
+    directory: "/golang"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "go"
