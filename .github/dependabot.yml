@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
   # Enable version updates for Terraform/OpenTofu
-  - package-ecosystem: "terraform"
+  - package-ecosystem: "opentofu"
     directory: "/opentofu"
     schedule:
       interval: "weekly"
@@ -13,7 +13,7 @@ updates:
     # Labels to apply to PRs
     labels:
       - "dependencies"
-      - "terraform"
+      - "opentofu"
     
   # Enable version updates for npm (from earlier example)
   - package-ecosystem: "npm"
@@ -54,7 +54,7 @@ updates:
       - "dependencies"
       - "github-actions"
   # Enable version updates for Go
-  - package-ecosystem: "go"
+  - package-ecosystem: "gomod"
     directory: "/golang"
     schedule:
       interval: "weekly"
