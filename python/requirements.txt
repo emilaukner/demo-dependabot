@@ -44,7 +44,7 @@ pytz==2019.3
 
 # Image Processing
 Pillow==7.0.0
-opencv-python==4.2.0.34
+opencv-python==4.13.0.92
 
 # JSON/YAML
 PyYAML==5.3
